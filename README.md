@@ -12,9 +12,7 @@ It enables businesses to deploy AI assistants, automate repetitive tasks, and mo
 # 🚀 Demo
 Add your demo link here:
 
-• Demo Video: https://your-demo-link  
-• GitHub Repository: https://github.com/your-username/nexusai
-
+• Demo Video: https://www.linkedin.com/posts/karthickkumar-s-b04a10348_artificialintelligence-genai-aichatbots-activity-7436384111583293440-PMIF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFcAzzQBiZdhnXnQPm5NPjAkqvCtiuCKbJc
 ---
 
 # ✨ Key Features
