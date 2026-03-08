@@ -1,0 +1,211 @@
+/* Automation Page */
+.automation-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-6);
+    min-height: 60vh;
+}
+
+.section-title {
+    font-size: var(--font-size-md);
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-4);
+}
+
+.automation-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.workflow-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-5);
+    margin-bottom: var(--space-3);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+}
+
+.workflow-card:hover {
+    border-color: var(--border-primary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow);
+}
+
+.workflow-card.active {
+    border-color: var(--color-primary);
+    background: rgba(108, 92, 231, 0.08);
+}
+
+.wf-card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    margin-bottom: var(--space-3);
+}
+
+.wf-card-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-md);
+    background: var(--gradient-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-shrink: 0;
+}
+
+.wf-card-info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.wf-card-name {
+    font-weight: 600;
+    font-size: var(--font-size-md);
+    color: var(--text-primary);
+}
+
+.wf-card-desc {
+    font-size: var(--font-size-xs);
+    color: var(--text-tertiary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.wf-card-meta {
+    display: flex;
+    gap: var(--space-4);
+    font-size: var(--font-size-xs);
+    color: var(--text-tertiary);
+    margin-bottom: var(--space-3);
+}
+
+.wf-card-meta span {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+}
+
+.wf-card-actions {
+    display: flex;
+    gap: var(--space-2);
+}
+
+/* Steps Timeline */
+.steps-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.step-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    padding: var(--space-3);
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-md);
+    position: relative;
+}
+
+.step-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 23px;
+    bottom: -12px;
+    width: 2px;
+    height: 12px;
+    background: var(--border-primary);
+}
+
+.step-number {
+    width: 28px;
+    height: 28px;
+    border-radius: var(--radius-full);
+    background: var(--gradient-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    color: white;
+    flex-shrink: 0;
+}
+
+.step-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.step-type {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--text-primary);
+    text-transform: capitalize;
+}
+
+.step-config {
+    font-size: var(--font-size-xs);
+    color: var(--text-tertiary);
+    word-break: break-all;
+}
+
+/* Runs List */
+.runs-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.run-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-3) var(--space-4);
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-sm);
+}
+
+.run-status {
+    font-size: 1.2rem;
+    display: flex;
+}
+
+.run-id {
+    color: var(--text-tertiary);
+    font-family: monospace;
+    font-size: var(--font-size-xs);
+}
+
+.run-duration {
+    color: var(--text-secondary);
+    font-size: var(--font-size-xs);
+}
+
+.run-time {
+    margin-left: auto;
+    color: var(--text-tertiary);
+    font-size: var(--font-size-xs);
+}
+
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+@media (max-width: 900px) {
+    .automation-layout {
+        grid-template-columns: 1fr;
+    }
+}

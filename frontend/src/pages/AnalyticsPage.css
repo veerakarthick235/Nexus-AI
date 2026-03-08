@@ -1,0 +1,76 @@
+/* Analytics Page Styles */
+.period-selector {
+    display: flex;
+    gap: var(--space-2);
+    background: var(--bg-secondary);
+    padding: var(--space-1);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-subtle);
+}
+
+.chart-card h3 {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    margin-bottom: var(--space-4);
+    color: var(--text-primary);
+}
+
+.chart-container {
+    height: 260px;
+}
+
+.custom-tooltip {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-md);
+    padding: var(--space-3) var(--space-4);
+    box-shadow: var(--shadow-lg);
+}
+
+.tooltip-label {
+    font-size: var(--font-size-xs);
+    color: var(--text-tertiary);
+    margin-bottom: var(--space-1);
+}
+
+.tooltip-value {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.top-workflows-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.top-workflow-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-3) var(--space-4);
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+}
+
+.top-workflow-item:hover {
+    background: var(--bg-elevated);
+}
+
+.wf-rank {
+    font-size: var(--font-size-sm);
+    font-weight: 800;
+    color: var(--color-primary-light);
+    width: 28px;
+}
+
+.wf-name {
+    flex: 1;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+}
