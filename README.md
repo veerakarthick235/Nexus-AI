@@ -173,8 +173,6 @@ Specializing in:
 - AI Web Applications
 - Full‑Stack AI Platforms
 
-LinkedIn: https://linkedin.com/in/your-profile
-
 ---
 
 # 📄 License
